@@ -49,7 +49,7 @@ def prepare_data(df, df2):
     df_dropnans = df_dropcols.dropna(subset=['Participants (M)', 'Participants (F)'])
     # Replace the NaN in Type column with 'Winter'
     df_fillnans = df_dropnans.fillna({'Type': 'Winter'})
-    # Remove the whitespace from the Type values using `str.strip()`
+    # Remove the whitespace from the Type values using `str.strip()\\使用 `str.strip() 删除类型值中的空格`
     df_fillnans['Type'] = df_fillnans['Type'].str.strip()
 
     # 2. Merge the DataFrames using a left merge.

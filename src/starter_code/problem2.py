@@ -52,12 +52,12 @@ def print_df_information(df):
 
     # Print the column data types using `.info()` or `.dtypes`
     print("\nColumn data types:\n")
-    print()  # Add your code inside the brackets
+    print(df.dtypes)  # Add your code inside the brackets
 
     # Print general statistics using `.describe()`
     # Why are some columns not shown in the output?
     print("\nStatistics:\n")
-    print()  # Add your code inside the brackets
+    print(df.describe())  # Add your code inside the brackets
 
 
 if __name__ == '__main__':
